@@ -1,0 +1,36 @@
+@media (max-width: 900px) {
+  .header-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  .project-bg {
+    filter: blur(3px);
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .profile-frame {
+    width: 170px;
+    height: 170px;
+  }
+
+  .project-image {
+    height: 220px;
+  }
+}
