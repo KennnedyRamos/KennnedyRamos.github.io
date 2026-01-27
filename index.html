@@ -1,14 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Kennedy Ramos | Desenvolvedor Flutter & Full Stack</title>
+  <title data-pt="Kennedy Ramos | Desenvolvedor Flutter & Full Stack" data-en="Kennedy Ramos | Flutter & Full Stack Developer">Kennedy Ramos | Desenvolvedor Flutter & Full Stack</title>
 
   <!-- SEO -->
-  <meta name="description" content="Portfólio de Kennedy Ramos, Desenvolvedor Flutter & Full Stack. Flutter, Firebase, APIs REST, Python e PostgreSQL." />
+  <meta name="description" content="Portfólio de Kennedy Ramos, Desenvolvedor Flutter & Full Stack. Flutter, Firebase, APIs REST, Python e PostgreSQL." data-pt="Portfólio de Kennedy Ramos, Desenvolvedor Flutter & Full Stack. Flutter, Firebase, APIs REST, Python e PostgreSQL." data-en="Portfolio of Kennedy Ramos, Flutter & Full Stack Developer. Flutter, Firebase, REST APIs, Python and PostgreSQL." />
   <meta name="author" content="Kennedy Ramos" />
+  <meta name="keywords" content="Flutter, Full Stack, Firebase, APIs REST, Python, PostgreSQL, FastAPI, Flask, React" />
+  <meta name="theme-color" content="#121212" />
+  <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -16,58 +19,86 @@
   <meta property="og:description" content="Aplicações escaláveis, arquitetura de apps e integrações com APIs." />
   <meta property="og:url" content="https://kennnedyramos.github.io/" />
   <meta property="og:image" content="https://kennnedyramos.github.io/images/preview.png" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Kennedy Ramos" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kennedy Ramos | Desenvolvedor Flutter & Full Stack" />
+  <meta name="twitter:description" content="Aplicações escaláveis, arquitetura de apps e integrações com APIs." />
+  <meta name="twitter:image" content="https://kennnedyramos.github.io/images/preview.png" />
+
+  <link rel="canonical" href="https://kennnedyramos.github.io/" />
 
   <!-- Estilos -->
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 
 <body>
   <div class="particle-bg" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content" data-pt="Pular para o conteúdo" data-en="Skip to content">Pular para o conteúdo</a>
+  <div class="lang-toggle" role="group" aria-label="Idioma">
+    <button type="button" class="lang-btn is-active" data-lang="pt" aria-pressed="true">PT</button>
+    <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+  </div>
 
   <!-- HEADER -->
   <header>
     <div class="container header-content">
       <div>
         <h1>Kennedy Ramos</h1>
-        <p>
-          Desenvolvedor Flutter & Full Stack<br />
+        <p data-pt="Desenvolvedor Flutter &amp; Full Stack<br /><span>Aplicações escaláveis • Arquitetura • Firebase • APIs</span>" data-en="Flutter &amp; Full Stack Developer<br /><span>Scalable apps • Architecture • Firebase • APIs</span>">
+          Desenvolvedor Flutter &amp; Full Stack<br />
           <span>Aplicações escaláveis • Arquitetura • Firebase • APIs</span>
         </p>
+
+        <div class="header-cta">
+          <a class="btn btn-primary" href="#projects" data-pt="Ver projetos" data-en="View projects">Ver projetos</a>
+          <a class="btn btn-secondary" id="resume-link" href="assets/curriculo-kennedy-ramos.pdf" target="_blank" rel="noopener noreferrer" download data-pt="Baixar currículo" data-en="Download resume" data-pt-href="assets/curriculo-kennedy-ramos.pdf" data-en-href="assets/curriculo-kennedy-ramos-en.pdf" data-pt-download="curriculo-kennedy-ramos.pdf" data-en-download="resume-kennedy-ramos.pdf">Baixar currículo</a>
+          <a class="btn btn-secondary" href="#contact" data-pt="Vamos conversar" data-en="Let's talk">Vamos conversar</a>
+        </div>
       </div>
 
       <div class="profile-frame">
         <img
           src="images/perfil.png"
           alt="Foto de Kennedy Ramos"
+          data-pt-alt="Foto de Kennedy Ramos"
+          data-en-alt="Photo of Kennedy Ramos"
           class="profile-pic-diamond"
+          width="230"
+          height="230"
+          decoding="async"
         />
       </div>
     </div>
   </header>
 
+  <main id="main-content">
   <!-- SOBRE -->
   <section id="about" class="container">
-    <h2>Sobre mim</h2>
-    <p>
-      Desenvolvedor Flutter & Full Stack com foco em aplicações modernas,
+    <h2 data-pt="Sobre mim" data-en="About me">Sobre mim</h2>
+    <p data-pt="Desenvolvedor Flutter &amp; Full Stack com foco em aplicações modernas, escaláveis e bem arquitetadas, priorizando experiência do usuário e qualidade de código." data-en="Flutter &amp; Full Stack developer focused on modern, scalable, well-architected apps, prioritizing user experience and code quality.">
+      Desenvolvedor Flutter &amp; Full Stack com foco em aplicações modernas,
       escaláveis e bem arquitetadas, priorizando experiência do usuário e
       qualidade de código.
     </p>
-    <p>
+    <p data-pt="Atuação completa no ciclo de desenvolvimento: arquitetura, integração com APIs, Firebase, modelagem de dados e entrega contínua." data-en="Full development cycle: architecture, API integration, Firebase, data modeling, and continuous delivery.">
       Atuação completa no ciclo de desenvolvimento: arquitetura, integração
       com APIs, Firebase, modelagem de dados e entrega contínua.
     </p>
   </section>
 
   <section id="projects" class="container">
-  <h2>Projetos em Destaque</h2>
+  <h2 data-pt="Projetos em Destaque" data-en="Featured projects">Projetos em Destaque</h2>
 
-  <div class="projects-grid">
+  <div class="projects-grid" id="projects-grid">
 
     <!-- Projeto 1 -->
     <article class="project-card featured" tabindex="0">
-      <span class="featured-badge">Projeto Destaque</span>
+      <span class="featured-badge" data-pt="Projeto Destaque" data-en="Featured">Projeto Destaque</span>
 
       <div class="project-image">
         <div
@@ -76,26 +107,38 @@
         ></div>
 
         <div class="project-overlay">
-          <h3>Aplicativo de Agendamento</h3>
-          <p>Flutter • Firebase • Cloud Firestore</p>
+          <h3 data-pt="Aplicativo de Agendamento" data-en="Scheduling App">Aplicativo de Agendamento</h3>
+          <p class="project-tech">Flutter • Firebase • Cloud Firestore</p>
 
-          <p>
-            Aplicativo mobile de agendamento de cortes de cabelo, com autenticação
-            de usuários, gerenciamento de horários, cancelamento de agendamentos e
-            visualização de disponibilidade em tempo real.
-            <br /><br />
-            Projeto estruturado com separação de camadas, regras de negócio desacopladas
-            da UI e foco em escalabilidade e manutenção. Integra Firebase Authentication
-            e Cloud Firestore para controle de acesso e sincronização de dados.
+          <div class="project-badges">
+            <span data-pt="Autenticação" data-en="Authentication">Autenticação</span>
+            <span data-pt="Agenda em Tempo Real" data-en="Real-time schedule">Agenda em Tempo Real</span>
+            <span data-pt="Cancelamentos" data-en="Cancellations">Cancelamentos</span>
+            <span data-pt="Arquitetura em Camadas" data-en="Layered architecture">Arquitetura em Camadas</span>
+          </div>
+
+          <p class="project-description" data-pt="App de agendamento com autenticação e horários em tempo real, integrado ao Firebase Authentication e Cloud Firestore." data-en="Scheduling app with authentication and real-time availability, integrated with Firebase Authentication and Cloud Firestore.">
+            App de agendamento com autenticação e horários em tempo real,
+            integrado ao Firebase Authentication e Cloud Firestore.
           </p>
 
-          <a
-            href="https://github.com/KennnedyRamos/agendamento-app"
-            target="_blank"
-            rel="noopener"
-          >
-            Ver no GitHub
-          </a>
+          <ul class="project-impact">
+            <li data-pt="Agenda atualizada sem conflitos" data-en="Conflict-free real-time schedule">Agenda atualizada sem conflitos</li>
+            <li data-pt="Fluxo simples de marcação e cancelamento" data-en="Simple booking and cancellation flow">Fluxo simples de marcação e cancelamento</li>
+          </ul>
+
+          <div class="project-links">
+            <a
+              href="https://github.com/KennnedyRamos/agendamento-app"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-pt="Ver no GitHub"
+              data-en="View on GitHub"
+            >
+              Ver no GitHub
+            </a>
+            <span class="project-note" data-pt="Demo em breve" data-en="Demo soon">Demo em breve</span>
+          </div>
         </div>
       </div>
     </article>
@@ -103,92 +146,114 @@
 
     <!-- Projeto 2 -->
     <article class="project-card featured" tabindex="0">
-      <span class="featured-badge">Projeto Destaque</span>
+      <span class="featured-badge" data-pt="Projeto Destaque" data-en="Featured">Projeto Destaque</span>
       <div class="project-image">
         <div class="project-bg" style="background-image: url('images/RSI-API-image.jpg');"></div>
 
         <div class="project-overlay">
-          <h3>API de Análise RSI</h3>
+          <h3 data-pt="API de Análise RSI" data-en="RSI Analysis API">API de Análise RSI</h3>
 
           <p class="project-tech">Python • Flask • PostgreSQL</p>
 
           <div class="project-badges">
-            <span>API REST</span>
-            <span>Arquitetura Escalável</span>
-            <span>Persistência Relacional</span>
-            <span>Dados em Tempo Real</span>
+            <span data-pt="API REST" data-en="REST API">API REST</span>
+            <span data-pt="Dados em Tempo Real" data-en="Real-time data">Dados em Tempo Real</span>
+            <span data-pt="Persistência Relacional" data-en="Relational persistence">Persistência Relacional</span>
+            <span data-pt="Escalabilidade" data-en="Scalability">Escalabilidade</span>
           </div>
 
-          <p class="project-description">
-            API REST para análise do Índice de Força Relativa (RSI) de criptomoedas,
-            estruturada com Flask e PostgreSQL, focada em desempenho, escalabilidade
-            e organização de dados.
+          <p class="project-description" data-pt="API de RSI com Flask e PostgreSQL, pronta para integrações e automações." data-en="RSI API with Flask and PostgreSQL, ready for integrations and automations.">
+            API de RSI com Flask e PostgreSQL, pronta para integrações
+            e automações.
           </p>
 
-          <a href="https://github.com/KennnedyRamos/API_RSI" target="_blank" rel="noopener">
-            Ver no GitHub
-          </a>
+          <ul class="project-impact">
+            <li data-pt="Centraliza cálculo de indicadores" data-en="Centralizes indicator calculations">Centraliza cálculo de indicadores</li>
+            <li data-pt="Base sólida para alertas" data-en="Solid base for alerts">Base sólida para alertas</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/KennnedyRamos/API_RSI" target="_blank" rel="noopener noreferrer" data-pt="Ver no GitHub" data-en="View on GitHub">
+              Ver no GitHub
+            </a>
+            <span class="project-note" data-pt="Demo em breve" data-en="Demo soon">Demo em breve</span>
+          </div>
         </div>
       </div>
     </article>
 
     <!-- Projeto 3 -->
     <article class="project-card featured" tabindex="0">
-      <span class="featured-badge">Projeto Destaque</span>
+      <span class="featured-badge" data-pt="Projeto Destaque" data-en="Featured">Projeto Destaque</span>
       <div class="project-image">
         <div class="project-bg" style="background-image: url('images/controle_estoque.jpeg');"></div>
 
         <div class="project-overlay">
-          <h3>Aplicativo de Controle de Estoque</h3>
+          <h3 data-pt="Aplicativo de Controle de Estoque" data-en="Inventory Control App">Aplicativo de Controle de Estoque</h3>
 
           <p class="project-tech">Flutter • Firebase • Firestore</p>
 
           <div class="project-badges">
-            <span>Autenticação</span>
-            <span>Regras de Acesso</span>
-            <span>CRUD Completo</span>
-            <span>Persistência em Nuvem</span>
+            <span data-pt="Autenticação" data-en="Authentication">Autenticação</span>
+            <span data-pt="Permissões" data-en="Permissions">Permissões</span>
+            <span data-pt="CRUD Completo" data-en="Full CRUD">CRUD Completo</span>
+            <span data-pt="Sync em Tempo Real" data-en="Real-time sync">Sync em Tempo Real</span>
           </div>
 
-          <p class="project-description">
-            Aplicativo mobile para controle de estoque com autenticação de usuários,
-            controle de permissões, gerenciamento de itens e sincronização de dados
-            em tempo real via Firebase.
+          <p class="project-description" data-pt="Controle de estoque com autenticação e permissões, sincronizado em tempo real via Firebase." data-en="Inventory control with authentication and permissions, synced in real time via Firebase.">
+            Controle de estoque com autenticação e permissões,
+            sincronizado em tempo real via Firebase.
           </p>
 
-          <a href="https://github.com/KennnedyRamos/controle-equipamentos-marketing-flutter" target="_blank" rel="noopener">
-            Ver no GitHub
-          </a>
+          <ul class="project-impact">
+            <li data-pt="Inventário consistente na nuvem" data-en="Consistent cloud inventory">Inventário consistente na nuvem</li>
+            <li data-pt="Permissões reduzem erros" data-en="Permissions reduce mistakes">Permissões reduzem erros</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/KennnedyRamos/controle-equipamentos-marketing-flutter" target="_blank" rel="noopener noreferrer" data-pt="Ver no GitHub" data-en="View on GitHub">
+              Ver no GitHub
+            </a>
+            <span class="project-note" data-pt="Demo em breve" data-en="Demo soon">Demo em breve</span>
+          </div>
         </div>
       </div>
     </article>
 
     <!-- Projeto 4 -->
-    <article class="project-card hidden" tabindex="0">
+    <article class="project-card featured" tabindex="0">
+      <span class="featured-badge" data-pt="Projeto Destaque" data-en="Featured">Projeto Destaque</span>
       <div class="project-image">
-        <div class="project-bg" style="background-image: url('images/projeto-buscador-de-RSI.jpg');"></div>
+        <div class="project-bg" style="background-image: url('images/gestao-de-tarefas.png');"></div>
 
         <div class="project-overlay">
-          <h3>Buscador de RSI</h3>
+          <h3 data-pt="Gestão de Tarefas" data-en="Task Management">Gestão de Tarefas</h3>
 
-          <p class="project-tech">Python • Flask • PostgreSQL</p>
+          <p class="project-tech">React • MUI • FastAPI • PostgreSQL</p>
 
           <div class="project-badges">
-            <span>Consulta em Tempo Real</span>
-            <span>API Financeira</span>
-            <span>Banco Relacional</span>
-            <span>Arquitetura Modular</span>
+            <span data-pt="Agenda Unificada" data-en="Unified schedule">Agenda Unificada</span>
+            <span data-pt="Prioridades &amp; Etiquetas" data-en="Priorities &amp; tags">Prioridades &amp; Etiquetas</span>
+            <span data-pt="Dashboard" data-en="Dashboard">Dashboard</span>
+            <span data-pt="Login JWT" data-en="JWT login">Login JWT</span>
           </div>
 
-          <p class="project-description">
-            Sistema backend para busca e análise de RSI de ativos digitais,
-            com integração a APIs externas, persistência em banco relacional
-            e estrutura modular para fácil manutenção.
+          <p class="project-description" data-pt="Plataforma com agenda unificada, prioridades e filtros rápidos para equipes pequenas." data-en="Platform with unified schedule, priorities, and fast filters for small teams.">
+            Plataforma com agenda unificada, prioridades e filtros rápidos
+            para equipes pequenas.
           </p>
 
-          <a href="https://github.com/KennnedyRamos/API_RSI" target="_blank" rel="noopener">
-            Ver no GitHub
-          </a>
+          <ul class="project-impact">
+            <li data-pt="Foco diário com resumo claro" data-en="Daily focus with clear summary">Foco diário com resumo claro</li>
+            <li data-pt="Priorização rápida por etiquetas" data-en="Quick prioritization with tags">Priorização rápida por etiquetas</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/KennnedyRamos/gestao_de_tarefas" target="_blank" rel="noopener noreferrer" data-pt="Ver no GitHub" data-en="View on GitHub">
+              Ver no GitHub
+            </a>
+            <span class="project-note" data-pt="Demo em breve" data-en="Demo soon">Demo em breve</span>
+          </div>
         </div>
       </div>
     </article>
@@ -196,29 +261,73 @@
     <!-- Projeto 5 -->
     <article class="project-card hidden" tabindex="0">
       <div class="project-image">
+        <div class="project-bg" style="background-image: url('images/projeto-buscador-de-RSI.jpg');"></div>
+
+        <div class="project-overlay">
+          <h3 data-pt="Buscador de RSI" data-en="RSI Finder">Buscador de RSI</h3>
+
+          <p class="project-tech">Python • Flask • PostgreSQL</p>
+
+          <div class="project-badges">
+            <span data-pt="Consulta em Tempo Real" data-en="Real-time queries">Consulta em Tempo Real</span>
+            <span data-pt="APIs Externas" data-en="External APIs">APIs Externas</span>
+            <span data-pt="Banco Relacional" data-en="Relational database">Banco Relacional</span>
+            <span data-pt="Arquitetura Modular" data-en="Modular architecture">Arquitetura Modular</span>
+          </div>
+
+          <p class="project-description" data-pt="Backend modular para consulta e análise de RSI com dados externos." data-en="Modular backend for RSI queries with external data.">
+            Backend modular para consulta e análise de RSI
+            com dados externos.
+          </p>
+
+          <ul class="project-impact">
+            <li data-pt="Consultas rápidas de ativos" data-en="Fast asset queries">Consultas rápidas de ativos</li>
+            <li data-pt="Modularidade facilita manutenção" data-en="Modularity eases maintenance">Modularidade facilita manutenção</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/KennnedyRamos/API_RSI" target="_blank" rel="noopener noreferrer" data-pt="Ver no GitHub" data-en="View on GitHub">
+              Ver no GitHub
+            </a>
+            <span class="project-note" data-pt="Demo em breve" data-en="Demo soon">Demo em breve</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Projeto 6 -->
+    <article class="project-card hidden" tabindex="0">
+      <div class="project-image">
         <div class="project-bg" style="background-image: url('images/projeto-buscador-de-QrCode.jpg');"></div>
 
         <div class="project-overlay">
-          <h3>Gerador de QR Code</h3>
+          <h3 data-pt="Gerador de QR Code" data-en="QR Code Generator">Gerador de QR Code</h3>
 
           <p class="project-tech">Python • Flask</p>
 
           <div class="project-badges">
-            <span>Geração Dinâmica</span>
-            <span>Backend Estruturado</span>
-            <span>Persistência de Dados</span>
-            <span>API REST</span>
+            <span data-pt="Geração Dinâmica" data-en="Dynamic generation">Geração Dinâmica</span>
+            <span data-pt="API REST" data-en="REST API">API REST</span>
+            <span data-pt="Persistência" data-en="Persistence">Persistência</span>
+            <span data-pt="Integração" data-en="Integration">Integração</span>
           </div>
 
-          <p class="project-description">
-            Aplicação backend para geração de QR Codes personalizados,
-            com estrutura em Flask, organização de dados e suporte
-            para integração com outros sistemas.
+          <p class="project-description" data-pt="API em Flask para geração de QR Codes sob demanda e integração simples." data-en="Flask API for on-demand QR code generation and simple integrations.">
+            API em Flask para geração de QR Codes sob demanda
+            e integração simples.
           </p>
 
-          <a href="https://github.com/KennnedyRamos" target="_blank" rel="noopener">
-            Ver no GitHub
-          </a>
+          <ul class="project-impact">
+            <li data-pt="Geração imediata via API" data-en="Instant generation via API">Geração imediata via API</li>
+            <li data-pt="Integrações rápidas com outros sistemas" data-en="Quick integrations with other systems">Integrações rápidas com outros sistemas</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/KennnedyRamos" target="_blank" rel="noopener noreferrer" data-pt="Ver no GitHub" data-en="View on GitHub">
+              Ver no GitHub
+            </a>
+            <span class="project-note" data-pt="Demo em breve" data-en="Demo soon">Demo em breve</span>
+          </div>
         </div>
       </div>
     </article>
@@ -227,7 +336,7 @@
 
     <!-- BOTÃO -->
     <div class="center">
-      <button id="toggle-projects" aria-expanded="false">
+      <button id="toggle-projects" aria-expanded="false" aria-controls="projects-grid" data-pt-collapsed="Mostrar mais" data-pt-expanded="Mostrar menos" data-en-collapsed="Show more" data-en-expanded="Show less">
         Mostrar mais
       </button>
     </div>
@@ -235,45 +344,130 @@
 
   <!-- TECNOLOGIAS -->
   <section id="skills" class="container">
-    <h2>Tecnologias</h2>
+    <h2 data-pt="Tecnologias" data-en="Technologies">Tecnologias</h2>
     <div class="tech-icons">
       <div><i class="devicon-flutter-plain colored"></i><span>Flutter</span></div>
       <div><i class="devicon-dart-plain colored"></i><span>Dart</span></div>
-      <div><i class="devicon-python-plain colored"></i><span>Python</span></div>
       <div><i class="devicon-firebase-plain colored"></i><span>Firebase</span></div>
       <div><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
-      <div><i class="devicon-git-plain colored"></i><span>Git</span></div>
+      <div><i class="devicon-python-plain colored"></i><span>Python</span></div>
+      <div><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+      <div><i class="devicon-flask-original colored"></i><span>Flask</span></div>
+      <div><i class="devicon-react-original colored"></i><span>React</span></div>
+      <div><i class="devicon-materialui-plain colored"></i><span>MUI</span></div>
+      <div><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+      <div><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+      <div><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+      <div class="tech-item-center"><i class="devicon-git-plain colored"></i><span>Git</span></div>
     </div>
   </section>
 
   <!-- CONTATO -->
   <section id="contact" class="container">
-    <h2>Contato</h2>
+    <h2 data-pt="Contato" data-en="Contact">Contato</h2>
     <div class="contact-items">
-      <a href="https://github.com/KennnedyRamos" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/kennedy-silva-ramos-566b00150/" target="_blank">LinkedIn</a>
-      <a href="https://wa.me/5513997781009" target="_blank">WhatsApp</a>
+      <a href="mailto:kennedyrafaelsilvaramos@gmail.com" data-pt="Email" data-en="Email">Email</a>
+      <a href="https://github.com/KennnedyRamos" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/kennedy-silva-ramos-566b00150/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://wa.me/5513997781009" target="_blank" rel="noopener noreferrer">WhatsApp</a>
     </div>
   </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Kennedy Ramos</p>
+    <p>&copy; 2026 Kennedy Ramos</p>
   </footer>
 
   <script>
     const btn = document.getElementById("toggle-projects");
     const hiddenProjects = document.querySelectorAll(".project-card.hidden");
+    const langButtons = document.querySelectorAll(".lang-btn");
+    const translatable = document.querySelectorAll("[data-pt][data-en]:not(meta):not(title)");
+    const translatableAlt = document.querySelectorAll("[data-pt-alt][data-en-alt]");
+    const metaDescription = document.querySelector('meta[name="description"]');
+    const titleEl = document.querySelector("title");
+    const resumeLink = document.getElementById("resume-link");
 
-    btn.addEventListener("click", () => {
+    let currentLang = "pt";
+
+    const updateToggleProjectsText = () => {
+      if (!btn) return;
       const expanded = btn.getAttribute("aria-expanded") === "true";
+      const key = expanded ? `${currentLang}Expanded` : `${currentLang}Collapsed`;
+      const label = btn.dataset[key];
+      if (label) {
+        btn.textContent = label;
+      }
+    };
 
-      hiddenProjects.forEach(card => {
-        card.style.display = expanded ? "none" : "block";
+    const setLanguage = (lang) => {
+      currentLang = lang;
+      translatable.forEach((el) => {
+        const value = el.dataset[lang];
+        if (value) {
+          el.innerHTML = value;
+        }
       });
 
-      btn.setAttribute("aria-expanded", String(!expanded));
-      btn.textContent = expanded ? "Mostrar mais" : "Mostrar menos";
+      translatableAlt.forEach((el) => {
+        const altValue = el.dataset[`${lang}Alt`];
+        if (altValue) {
+          el.setAttribute("alt", altValue);
+        }
+      });
+
+      if (titleEl && titleEl.dataset[lang]) {
+        titleEl.textContent = titleEl.dataset[lang];
+      }
+
+      if (metaDescription && metaDescription.dataset[lang]) {
+        metaDescription.setAttribute("content", metaDescription.dataset[lang]);
+      }
+
+      if (resumeLink) {
+        const resumeHref = resumeLink.dataset[`${lang}Href`];
+        if (resumeHref) {
+          resumeLink.setAttribute("href", resumeHref);
+        }
+        const resumeDownload = resumeLink.dataset[`${lang}Download`];
+        if (resumeDownload) {
+          resumeLink.setAttribute("download", resumeDownload);
+        }
+      }
+
+      document.documentElement.lang = lang === "pt" ? "pt-br" : "en";
+
+      langButtons.forEach((button) => {
+        const isActive = button.dataset.lang === lang;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+
+      updateToggleProjectsText();
+      localStorage.setItem("lang", lang);
+    };
+
+    if (btn) {
+      btn.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+
+        hiddenProjects.forEach(card => {
+          card.style.display = expanded ? "none" : "block";
+        });
+
+        btn.setAttribute("aria-expanded", String(!expanded));
+        updateToggleProjectsText();
+      });
+    }
+
+    langButtons.forEach((button) => {
+      button.addEventListener("click", () => setLanguage(button.dataset.lang));
     });
+
+    const storedLang = localStorage.getItem("lang");
+    const browserLang = (navigator.language || "").toLowerCase();
+    const initialLang = storedLang || (browserLang.startsWith("pt") ? "pt" : "en");
+    setLanguage(initialLang);
   </script>
 </body>
 </html>

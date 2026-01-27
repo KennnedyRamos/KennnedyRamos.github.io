@@ -16,11 +16,36 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   position: relative;
+  color-scheme: dark;
 }
 
 body > * {
   position: relative;
   z-index: 1;
+}
+
+/* === ACESSIBILIDADE === */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 16px;
+  background: #4FC3F7;
+  color: #121212;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  left: 16px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #4FC3F7;
+  outline-offset: 3px;
 }
 
 /* === FUNDO ANIMADO COM PARTÍCULAS === */
@@ -65,6 +90,7 @@ header::before {
   background: radial-gradient(circle, rgba(79, 195, 247, 0.18), transparent 70%);
   animation: headerGlow 12s linear infinite;
   z-index: 0;
+  pointer-events: none;
 }
 
 @keyframes headerGlow {
@@ -79,6 +105,81 @@ header::before {
   justify-content: space-between;
   gap: 2.5rem;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+/* === IDIOMA === */
+.lang-toggle {
+  display: inline-flex;
+  gap: 0.4rem;
+  padding: 0.2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(79, 195, 247, 0.35);
+  background: rgba(79, 195, 247, 0.08);
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 30;
+  pointer-events: auto;
+}
+
+.lang-btn {
+  border: none;
+  background: transparent;
+  color: #81D4FA;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  pointer-events: auto;
+}
+
+.lang-btn.is-active {
+  background: #4FC3F7;
+  color: #121212;
+}
+
+/* === CTA HEADER === */
+.header-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #4FC3F7;
+  color: #121212;
+}
+
+.btn-primary:hover {
+  background: #29B6F6;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 1px solid #4FC3F7;
+  color: #4FC3F7;
+}
+
+.btn-secondary:hover {
+  background: rgba(79, 195, 247, 0.12);
+  transform: translateY(-2px);
 }
 
 /* === TIPOGRAFIA === */
@@ -102,6 +203,11 @@ section p {
   font-size: 1.05rem;
   text-align: center;
   color: #d6d6d6;
+}
+
+header .header-content p span {
+  display: block;
+  text-align: center;
 }
 
 /* === FOTO PERFIL === */
@@ -145,6 +251,8 @@ section p {
   background-color: #1e1e1e;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
+  content-visibility: auto;
+  contain-intrinsic-size: 360px 320px;
 }
 
 .project-card:hover,
@@ -174,13 +282,26 @@ section p {
   z-index: 3;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding: 1.8rem;
+  padding: 1.4rem;
   background: rgba(0, 0, 0, 0.75);
   opacity: 0;
   transition: opacity 0.35s ease;
+  gap: 0.5rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(79, 195, 247, 0.55) transparent;
+}
+
+.project-overlay::-webkit-scrollbar {
+  width: 6px;
+}
+
+.project-overlay::-webkit-scrollbar-thumb {
+  background: rgba(79, 195, 247, 0.55);
+  border-radius: 6px;
 }
 
 /* Ativação do hover */
@@ -198,7 +319,7 @@ section p {
 /* === TEXTO DO OVERLAY === */
 .project-overlay h3 {
   font-size: 1.45rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0;
   color: #4FC3F7;
   text-shadow: 0 0 8px rgba(79, 195, 247, 0.6);
 }
@@ -206,11 +327,10 @@ section p {
 .project-overlay p {
   font-size: 0.95rem;
   color: #e0e0e0;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0;
 }
 
 .project-overlay a {
-  margin-top: 0.8rem;
   color: #FFEB3B;
   font-weight: 600;
   text-decoration: none;
@@ -218,6 +338,44 @@ section p {
 
 .project-overlay a:hover {
   text-decoration: underline;
+}
+
+.project-impact {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.85rem;
+  color: #cfe8f3;
+  line-height: 1.35;
+}
+
+.project-impact li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.project-impact li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4FC3F7;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+
+.project-note {
+  font-size: 0.8rem;
+  color: #9ad6f3;
+  opacity: 0.85;
 }
 
 /* Projetos ocultos */
@@ -252,9 +410,21 @@ section p {
 /* === TECNOLOGIAS === */
 .tech-icons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(110px, 130px));
   gap: 2.5rem;
   text-align: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.tech-icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-icons .tech-item-center {
+  grid-column: 1 / -1;
 }
 
 .tech-icons i {
@@ -303,7 +473,7 @@ footer {
 .project-tech {
   font-size: 0.9rem;
   color: #b0e5ff;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0;
 }
 
 .project-badges {
@@ -311,7 +481,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .project-badges span {
@@ -329,8 +499,8 @@ footer {
 .project-description {
   font-size: 0.9rem;
   color: #dddddd;
-  line-height: 1.5;
-  margin-bottom: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0;
 }
 
 .project-card.featured {
@@ -351,4 +521,16 @@ footer {
   border-radius: 20px;
   text-transform: uppercase;
   z-index: 5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .particle-bg {
+    animation: none;
+  }
 }

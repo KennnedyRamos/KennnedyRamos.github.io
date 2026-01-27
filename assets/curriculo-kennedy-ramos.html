@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículo | Kennedy Ramos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #0f172a;
+      --muted: #475569;
+      --accent: #0ea5e9;
+      --accent-dark: #0369a1;
+      --card: #f8fafc;
+      --line: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Manrope", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #ffffff;
+      line-height: 1.55;
+      padding: 36px;
+    }
+
+    .page {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 24px;
+      align-items: center;
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .title h1 {
+      font-family: "Space Grotesk", "Manrope", sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .title h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent-dark);
+    }
+
+    .summary {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .contact {
+      display: grid;
+      gap: 10px;
+      font-size: 0.95rem;
+      justify-items: start;
+    }
+
+    .contact span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(14, 165, 233, 0.1);
+      color: var(--accent-dark);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    section {
+      margin-bottom: 22px;
+    }
+
+    section h3 {
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      color: var(--accent-dark);
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+
+    .list {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .list li {
+      position: relative;
+      padding-left: 16px;
+    }
+
+    .list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skills span {
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-size: 0.9rem;
+      color: var(--muted);
+      background: #fff;
+    }
+
+    .role {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      font-weight: 600;
+    }
+
+    .role span {
+      color: var(--muted);
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+
+    .project-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .project-title span {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 18px;
+    }
+
+    .footer-note {
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        grid-template-columns: 1fr;
+      }
+
+      .grid,
+      .two-columns {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @page {
+      margin: 18mm;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="title">
+        <h1>Kennedy Ramos</h1>
+        <h2>Desenvolvedor Full Stack Flutter</h2>
+        <p class="summary">
+          Desenvolvedor focado em Flutter e full stack, com experiência em apps escaláveis,
+          integrações com APIs e arquitetura em camadas. Busco entregar interfaces claras,
+          regras de negócio bem estruturadas e integrações confiáveis com Firebase e APIs REST.
+        </p>
+      </div>
+      <div class="contact">
+        <span><strong>Email:</strong> kennedyrafaelsilvaramos@gmail.com</span>
+        <span><strong>WhatsApp:</strong> +55 13 99778-1009</span>
+        <span><strong>LinkedIn:</strong> linkedin.com/in/kennedy-silva-ramos-566b00150</span>
+        <span><strong>GitHub:</strong> github.com/KennnedyRamos</span>
+        <span class="pill">Disponível para oportunidades</span>
+      </div>
+    </header>
+
+    <section>
+      <h3>Stack Principal</h3>
+      <div class="skills">
+        <span>Flutter</span>
+        <span>Dart</span>
+        <span>Firebase</span>
+        <span>Firestore</span>
+        <span>Python</span>
+        <span>FastAPI</span>
+        <span>Flask</span>
+        <span>PostgreSQL</span>
+        <span>React</span>
+        <span>MUI</span>
+        <span>Git</span>
+      </div>
+    </section>
+
+    <section class="two-columns">
+      <div>
+        <h3>Experiência</h3>
+        <div class="card">
+          <div class="role">
+            Estagiário de TI — Ribeirar Beer Transportadora de Bebidas
+          </div>
+          <ul class="list">
+            <li>Suporte técnico a usuários e manutenção básica de equipamentos.</li>
+            <li>Apoio na organização de ativos e documentação de processos internos.</li>
+            <li>Colaboração com a equipe na melhoria de fluxos operacionais digitais.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h3>Formação</h3>
+        <div class="card">
+          <div class="role">
+            Tecnologia em Análise e Desenvolvimento de Sistemas — FACENS
+          </div>
+          <ul class="list">
+            <li>Faculdade de Engenharia de Sorocaba.</li>
+          </ul>
+        </div>
+        <div style="height: 10px"></div>
+        <div class="card">
+          <div class="role">
+            Idiomas
+          </div>
+          <ul class="list">
+            <li>Inglês básico (cursando).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Projetos em Destaque</h3>
+      <div class="grid">
+        <div class="card">
+          <div class="project-title">
+            Aplicativo de Agendamento
+            <span>Flutter • Firebase</span>
+          </div>
+          <ul class="list">
+            <li>Agenda em tempo real com autenticação de usuários.</li>
+            <li>Camadas desacopladas para facilitar manutenção.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="project-title">
+            Gestão de Tarefas
+            <span>React • FastAPI</span>
+          </div>
+          <ul class="list">
+            <li>Agenda unificada com prioridades e etiquetas.</li>
+            <li>Dashboard com visão diária de produtividade.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="project-title">
+            API de Análise RSI
+            <span>Python • PostgreSQL</span>
+          </div>
+          <ul class="list">
+            <li>API REST para cálculos de indicadores técnicos.</li>
+            <li>Estrutura pronta para automações e alertas.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="project-title">
+            Controle de Estoque
+            <span>Flutter • Firebase</span>
+          </div>
+          <ul class="list">
+            <li>Permissões e sincronização em tempo real.</li>
+            <li>Fluxo simples de atualização de itens.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Competências</h3>
+      <div class="grid">
+        <div class="card">
+          <ul class="list">
+            <li>Arquitetura em camadas e organização de código.</li>
+            <li>Integração com APIs REST e autenticação.</li>
+            <li>Modelagem de dados e persistência em nuvem.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul class="list">
+            <li>Interfaces modernas com foco em UX.</li>
+            <li>Versionamento e fluxo colaborativo com Git.</li>
+            <li>Entrega contínua e boas práticas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <p class="footer-note">
+      Portfólio: kennnedyramos.github.io • Atualizado em janeiro de 2026
+    </p>
+  </div>
+</body>
+</html>

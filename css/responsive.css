@@ -3,12 +3,22 @@
     flex-direction: column-reverse;
     text-align: center;
   }
+
+  .header-cta {
+    justify-content: center;
+  }
+
+  .lang-toggle {
+    top: 12px;
+    left: 12px;
+  }
 }
 
 @media (max-width: 768px) {
   .project-overlay {
     opacity: 1;
     background: rgba(0, 0, 0, 0.65);
+    padding: 1.1rem;
   }
 
   .project-bg {
@@ -17,6 +27,30 @@
 
   section p {
     font-size: 1rem;
+  }
+
+  .project-impact {
+    font-size: 0.8rem;
+  }
+
+  .header-cta {
+    width: 100%;
+  }
+
+  .header-cta .btn {
+    flex: 1 1 180px;
+  }
+
+  .tech-icons {
+    gap: 1.5rem;
+  }
+
+  .tech-icons i {
+    font-size: 3rem;
+  }
+
+  .tech-icons span {
+    font-size: 0.85rem;
   }
 }
 
@@ -32,5 +66,26 @@
 
   .project-image {
     height: 220px;
+  }
+
+  .project-overlay {
+    padding: 1rem;
+  }
+
+  .project-impact {
+    font-size: 0.75rem;
+  }
+
+  .tech-icons {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 110px));
+    gap: 1rem;
+  }
+
+  .tech-icons i {
+    font-size: 2.6rem;
+  }
+
+  .tech-icons span {
+    font-size: 0.8rem;
   }
 }
