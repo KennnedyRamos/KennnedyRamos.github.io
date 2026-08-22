@@ -1,91 +1,457 @@
-@media (max-width: 900px) {
+/* =========================================================
+   TABLET / TELAS MÉDIAS
+========================================================= */
+
+@media (max-width: 1000px) {
+
   .header-content {
-    flex-direction: column-reverse;
-    text-align: center;
+    gap:
+      2.5rem;
+  }
+
+  .about-content {
+    grid-template-columns:
+      1fr;
+  }
+
+  .about-highlights {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .tech-icons {
+    grid-template-columns:
+      repeat(4, minmax(90px, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   900PX
+========================================================= */
+
+@media (max-width: 900px) {
+
+  header {
+    padding:
+      5rem 0 4rem;
+  }
+
+  .header-content {
+    flex-direction:
+      column-reverse;
+
+    text-align:
+      center;
+  }
+
+  .hero-content {
+    max-width:
+      760px;
+  }
+
+  .hero-description {
+    justify-content:
+      center;
+  }
+
+  .hero-summary {
+    margin:
+      0 auto;
   }
 
   .header-cta {
-    justify-content: center;
+    justify-content:
+      center;
   }
 
   .lang-toggle {
-    top: 12px;
-    left: 12px;
-  }
-}
+    top:
+      12px;
 
-@media (max-width: 768px) {
-  .project-overlay {
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.65);
-    padding: 1.1rem;
-  }
-
-  .project-bg {
-    filter: blur(3px);
-  }
-
-  section p {
-    font-size: 1rem;
-  }
-
-  .project-impact {
-    font-size: 0.8rem;
-  }
-
-  .header-cta {
-    width: 100%;
-  }
-
-  .header-cta .btn {
-    flex: 1 1 180px;
-  }
-
-  .tech-icons {
-    gap: 1.5rem;
-  }
-
-  .tech-icons i {
-    font-size: 3rem;
-  }
-
-  .tech-icons span {
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.8rem;
+    left:
+      12px;
   }
 
   .profile-frame {
-    width: 170px;
-    height: 170px;
+    width:
+      210px;
+
+    height:
+      210px;
+  }
+
+}
+
+
+/* =========================================================
+   768PX
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    width:
+      min(92%, 620px);
+  }
+
+  .section {
+    padding:
+      4rem 0;
+  }
+
+  h1 {
+    font-size:
+      clamp(2.2rem, 10vw, 3rem);
+  }
+
+  .hero-title {
+    font-size:
+      1.3rem;
+  }
+
+  .hero-summary {
+    font-size:
+      1rem;
+  }
+
+  .header-cta {
+    width:
+      100%;
+
+    display:
+      grid;
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      0.7rem;
+  }
+
+  .header-cta .btn {
+    width:
+      100%;
+  }
+
+
+  /* Sobre */
+
+  .about-highlights {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  /* Projetos */
+
+  .projects-grid {
+    grid-template-columns:
+      1fr;
+
+    gap:
+      1.5rem;
   }
 
   .project-image {
-    height: 220px;
+    height:
+      230px;
   }
 
-  .project-overlay {
-    padding: 1rem;
+  .project-content {
+    padding:
+      1.3rem;
   }
 
-  .project-impact {
-    font-size: 0.75rem;
+
+  /* Tecnologias */
+
+  .tech-icons {
+    grid-template-columns:
+      repeat(4, minmax(70px, 1fr));
+
+    gap:
+      0.8rem;
+  }
+
+  .tech-item {
+    min-height:
+      105px;
+  }
+
+  .tech-item i {
+    font-size:
+      2.5rem;
+  }
+
+}
+
+
+/* =========================================================
+   600PX
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .lang-toggle {
+    top:
+      10px;
+
+    left:
+      10px;
+  }
+
+  .lang-btn {
+    padding:
+      0.3rem 0.65rem;
+
+    font-size:
+      0.8rem;
+  }
+
+  header {
+    padding:
+      4.5rem 0 3.5rem;
+  }
+
+  .profile-frame {
+    width:
+      185px;
+
+    height:
+      185px;
+  }
+
+  .profile-status {
+    font-size:
+      0.7rem;
+  }
+
+  .section-heading {
+    margin-bottom:
+      2rem;
+  }
+
+  .section-heading h2 {
+    font-size:
+      1.8rem;
+  }
+
+  .about-main p {
+    font-size:
+      0.95rem;
+  }
+
+  .project-image {
+    height:
+      210px;
+  }
+
+  .project-content h3 {
+    font-size:
+      1.25rem;
+  }
+
+  .project-badges span {
+    font-size:
+      0.65rem;
+
+    padding:
+      0.28rem 0.55rem;
   }
 
   .tech-icons {
-    grid-template-columns: repeat(auto-fit, minmax(90px, 110px));
-    gap: 1rem;
+    grid-template-columns:
+      repeat(3, 1fr);
   }
 
-  .tech-icons i {
-    font-size: 2.6rem;
+  .contact-items {
+    flex-direction:
+      column;
+
+    align-items:
+      stretch;
   }
 
-  .tech-icons span {
-    font-size: 0.8rem;
+  .contact-items a {
+    width:
+      100%;
   }
+
+}
+
+
+/* =========================================================
+   480PX
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .container {
+    width:
+      92%;
+  }
+
+  header {
+    padding:
+      4.2rem 0 3rem;
+  }
+
+  h1 {
+    font-size:
+      2.15rem;
+  }
+
+  .hero-title {
+    font-size:
+      1.15rem;
+  }
+
+  .hero-description {
+    font-size:
+      0.8rem;
+
+    gap:
+      0.3rem;
+  }
+
+  .hero-summary {
+    font-size:
+      0.92rem;
+  }
+
+  .profile-frame {
+    width:
+      165px;
+
+    height:
+      165px;
+  }
+
+  .profile-status {
+    max-width:
+      100%;
+
+    text-align:
+      center;
+  }
+
+  .section {
+    padding:
+      3.5rem 0;
+  }
+
+  .section-heading > p {
+    font-size:
+      0.9rem;
+  }
+
+  .project-image {
+    height:
+      190px;
+  }
+
+  .project-content {
+    padding:
+      1.1rem;
+  }
+
+  .project-content h3 {
+    font-size:
+      1.15rem;
+  }
+
+  .project-description {
+    font-size:
+      0.85rem;
+  }
+
+  .project-impact div {
+    font-size:
+      0.76rem;
+  }
+
+  .tech-icons {
+    grid-template-columns:
+      repeat(3, 1fr);
+
+    gap:
+      0.6rem;
+  }
+
+  .tech-item {
+    min-height:
+      95px;
+
+    border-radius:
+      10px;
+  }
+
+  .tech-item i {
+    font-size:
+      2.2rem;
+  }
+
+  .tech-item span {
+    font-size:
+      0.7rem;
+  }
+
+  #toggle-projects {
+    width:
+      100%;
+
+    max-width:
+      280px;
+  }
+
+}
+
+
+/* =========================================================
+   360PX
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .profile-frame {
+    width:
+      150px;
+
+    height:
+      150px;
+  }
+
+  h1 {
+    font-size:
+      1.9rem;
+  }
+
+  .hero-title {
+    font-size:
+      1.05rem;
+  }
+
+  .hero-description {
+    display:
+      grid;
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      0.2rem;
+  }
+
+  .hero-description span:nth-child(even) {
+    display:
+      none;
+  }
+
+  .tech-icons {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
 }
