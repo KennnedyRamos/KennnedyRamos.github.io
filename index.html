@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿```html
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -15,7 +16,10 @@
     Kennedy Ramos | Desenvolvedor Full Stack
   </title>
 
-  <!-- SEO -->
+  <!-- =========================
+       SEO
+  ========================== -->
+
   <meta
     name="description"
     content="Portfólio de Kennedy Ramos, Desenvolvedor Full Stack com foco em Python e Flutter. Desenvolvimento de APIs, aplicações web e mobile."
@@ -23,18 +27,27 @@
     data-en="Portfolio of Kennedy Ramos, Full Stack Developer focused on Python and Flutter. API, web and mobile application development."
   />
 
-  <meta name="author" content="Kennedy Ramos" />
-
   <meta
-    name="keywords"
-    content="Kennedy Ramos, Desenvolvedor Full Stack, Flutter, Python, FastAPI, Flask, Firebase, PostgreSQL, APIs REST, React, Dart"
+    name="author"
+    content="Kennedy Ramos"
   />
 
-  <meta name="theme-color" content="#121212" />
-  <meta name="robots" content="index, follow" />
+  <meta
+    name="robots"
+    content="index, follow"
+  />
+
+  <meta
+    name="theme-color"
+    content="#121212"
+  />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
+
+  <meta
+    property="og:type"
+    content="website"
+  />
 
   <meta
     property="og:title"
@@ -60,12 +73,27 @@
     content="https://kennnedyramos.github.io/images/preview.png"
   />
 
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="og:locale:alternate" content="en_US" />
-  <meta property="og:site_name" content="Kennedy Ramos" />
+  <meta
+    property="og:locale"
+    content="pt_BR"
+  />
+
+  <meta
+    property="og:locale:alternate"
+    content="en_US"
+  />
+
+  <meta
+    property="og:site_name"
+    content="Kennedy Ramos"
+  />
 
   <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
 
   <meta
     name="twitter:title"
@@ -86,16 +114,31 @@
     content="https://kennnedyramos.github.io/images/preview.png"
   />
 
+  <!-- Canonical -->
+
   <link
     rel="canonical"
     href="https://kennnedyramos.github.io/"
   />
 
-  <!-- Estilos -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- =========================
+       ESTILOS
+  ========================== -->
 
-  <!-- Devicon -->
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="css/responsive.css"
+  />
+
+  <!-- =========================
+       DEVICON
+  ========================== -->
+
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
@@ -104,13 +147,20 @@
 
 <body>
 
-  <!-- Fundo -->
+  <!-- =========================
+       FUNDO
+  ========================== -->
+
   <div
     class="particle-bg"
     aria-hidden="true"
   ></div>
 
-  <!-- Acessibilidade -->
+
+  <!-- =========================
+       ACESSIBILIDADE
+  ========================== -->
+
   <a
     class="skip-link"
     href="#main-content"
@@ -120,17 +170,23 @@
     Pular para o conteúdo
   </a>
 
-  <!-- Idioma -->
+
+  <!-- =========================
+       IDIOMA
+  ========================== -->
+
   <div
     class="lang-toggle"
     role="group"
     aria-label="Idioma"
   >
+
     <button
       type="button"
       class="lang-btn is-active"
       data-lang="pt"
       aria-pressed="true"
+      aria-label="Português"
     >
       PT
     </button>
@@ -140,15 +196,20 @@
       class="lang-btn"
       data-lang="en"
       aria-pressed="false"
+      aria-label="English"
     >
       EN
     </button>
+
   </div>
+
 
   <!-- =========================
        HEADER
   ========================== -->
+
   <header>
+
     <div class="container header-content">
 
       <div class="hero-content">
@@ -161,7 +222,9 @@
           PORTFÓLIO PROFISSIONAL
         </span>
 
+
         <h1>Kennedy Ramos</h1>
+
 
         <h2
           class="hero-title"
@@ -171,7 +234,9 @@
           Desenvolvedor Full Stack | Python & Flutter
         </h2>
 
+
         <p class="hero-description">
+
           <span
             data-pt="APIs REST"
             data-en="REST APIs"
@@ -179,7 +244,7 @@
             APIs REST
           </span>
 
-          <span>•</span>
+          <span aria-hidden="true">•</span>
 
           <span
             data-pt="Backend"
@@ -188,7 +253,7 @@
             Backend
           </span>
 
-          <span>•</span>
+          <span aria-hidden="true">•</span>
 
           <span
             data-pt="Aplicações Mobile"
@@ -197,10 +262,12 @@
             Aplicações Mobile
           </span>
 
-          <span>•</span>
+          <span aria-hidden="true">•</span>
 
           <span>Firebase</span>
+
         </p>
+
 
         <p
           class="hero-summary"
@@ -210,6 +277,9 @@
           Transformo problemas reais em soluções digitais funcionais,
           organizadas e fáceis de manter.
         </p>
+
+
+        <!-- CTA -->
 
         <div class="header-cta">
 
@@ -222,13 +292,18 @@
             Ver projetos
           </a>
 
+
+          <!--
+            IMPORTANTE:
+            O download agora utiliza apenas o atributo download.
+            Não usamos target="_blank".
+          -->
+
           <a
             class="btn btn-secondary"
             id="resume-link"
             href="assets/curriculo-kennedy-ramos.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            download
+            download="curriculo-kennedy-ramos.pdf"
             data-pt="Baixar currículo"
             data-en="Download resume"
             data-pt-href="assets/curriculo-kennedy-ramos.pdf"
@@ -238,6 +313,7 @@
           >
             Baixar currículo
           </a>
+
 
           <a
             class="btn btn-secondary"
@@ -249,7 +325,13 @@
           </a>
 
         </div>
+
       </div>
+
+
+      <!-- =========================
+           FOTO
+      ========================== -->
 
       <div class="profile-area">
 
@@ -269,6 +351,7 @@
 
         </div>
 
+
         <span
           class="profile-status"
           data-pt="Disponível para oportunidades"
@@ -280,13 +363,21 @@
       </div>
 
     </div>
+
   </header>
 
+
+  <!-- =========================
+       CONTEÚDO PRINCIPAL
+  ========================== -->
+
   <main id="main-content">
+
 
     <!-- =========================
          SOBRE
     ========================== -->
+
     <section
       id="about"
       class="container section"
@@ -311,6 +402,7 @@
 
       </div>
 
+
       <div class="about-content">
 
         <div class="about-main">
@@ -324,6 +416,7 @@
             organizadas e fáceis de manter.
           </p>
 
+
           <p
             data-pt="Minha trajetória começou na área de TI, onde desenvolvi experiência com suporte, sistemas e melhoria de processos. Essa experiência também me trouxe uma visão prática de como tecnologia, dados e processos podem trabalhar juntos para resolver problemas do dia a dia."
             data-en="My career started in IT, where I gained experience with support, systems and process improvement. This experience also gave me a practical view of how technology, data and processes can work together to solve real-world problems."
@@ -333,6 +426,7 @@
             também me trouxe uma visão prática de como tecnologia, dados e
             processos podem trabalhar juntos para resolver problemas do dia a dia.
           </p>
+
 
           <p
             data-pt="No desenvolvimento, trabalho principalmente com Python, FastAPI, Flask, Flutter, Dart, React, APIs REST, PostgreSQL e Firebase. Tenho interesse especial em desenvolvimento de APIs, aplicações web e aplicações mobile."
@@ -346,13 +440,18 @@
 
         </div>
 
+
         <div class="about-highlights">
+
 
           <div class="highlight-card">
 
-            <span class="highlight-number">01</span>
+            <span class="highlight-number">
+              01
+            </span>
 
             <div>
+
               <h3
                 data-pt="Backend"
                 data-en="Backend"
@@ -366,15 +465,20 @@
               >
                 APIs REST, Python, FastAPI, Flask e PostgreSQL.
               </p>
+
             </div>
 
           </div>
 
+
           <div class="highlight-card">
 
-            <span class="highlight-number">02</span>
+            <span class="highlight-number">
+              02
+            </span>
 
             <div>
+
               <h3
                 data-pt="Mobile"
                 data-en="Mobile"
@@ -388,15 +492,20 @@
               >
                 Aplicações Flutter e integração com Firebase.
               </p>
+
             </div>
 
           </div>
 
+
           <div class="highlight-card">
 
-            <span class="highlight-number">03</span>
+            <span class="highlight-number">
+              03
+            </span>
 
             <div>
+
               <h3
                 data-pt="Soluções reais"
                 data-en="Real-world solutions"
@@ -410,6 +519,7 @@
               >
                 Projetos voltados para problemas práticos e processos reais.
               </p>
+
             </div>
 
           </div>
@@ -424,6 +534,7 @@
     <!-- =========================
          PROJETOS
     ========================== -->
+
     <section
       id="projects"
       class="container section"
@@ -439,12 +550,14 @@
           PORTFÓLIO
         </span>
 
+
         <h2
           data-pt="Projetos em destaque"
           data-en="Featured projects"
         >
           Projetos em destaque
         </h2>
+
 
         <p
           data-pt="Projetos que demonstram minha experiência com desenvolvimento mobile, backend e aplicações full stack."
@@ -456,14 +569,17 @@
 
       </div>
 
+
       <div
         class="projects-grid"
         id="projects-grid"
       >
 
+
         <!-- =========================
              PROJETO 1
         ========================== -->
+
         <article class="project-card featured">
 
           <div class="project-image">
@@ -471,8 +587,12 @@
             <img
               src="images/app-agendamento.png"
               alt="Interface do aplicativo de agendamento"
+              data-pt-alt="Interface do aplicativo de agendamento"
+              data-en-alt="Scheduling application interface"
               loading="lazy"
+              decoding="async"
             />
+
 
             <span
               class="featured-badge"
@@ -483,6 +603,7 @@
             </span>
 
           </div>
+
 
           <div class="project-content">
 
@@ -498,6 +619,7 @@
                   DESENVOLVIMENTO MOBILE
                 </span>
 
+
                 <h3
                   data-pt="Aplicativo de Agendamento"
                   data-en="Scheduling App"
@@ -509,9 +631,11 @@
 
             </div>
 
+
             <p class="project-tech">
               Flutter • Dart • Firebase • Cloud Firestore
             </p>
+
 
             <div class="project-badges">
 
@@ -545,6 +669,7 @@
 
             </div>
 
+
             <p
               class="project-description"
               data-pt="Aplicativo completo de agendamento desenvolvido com Flutter e Firebase, com autenticação, disponibilidade de horários em tempo real e fluxo de marcação e cancelamento."
@@ -555,10 +680,14 @@
               real e fluxo de marcação e cancelamento.
             </p>
 
+
             <div class="project-impact">
 
               <div>
-                <strong>✓</strong>
+
+                <strong aria-hidden="true">
+                  ✓
+                </strong>
 
                 <span
                   data-pt="Agenda atualizada em tempo real"
@@ -566,10 +695,15 @@
                 >
                   Agenda atualizada em tempo real
                 </span>
+
               </div>
 
+
               <div>
-                <strong>✓</strong>
+
+                <strong aria-hidden="true">
+                  ✓
+                </strong>
 
                 <span
                   data-pt="Fluxo de marcação e cancelamento"
@@ -577,9 +711,11 @@
                 >
                   Fluxo de marcação e cancelamento
                 </span>
+
               </div>
 
             </div>
+
 
             <div class="project-links">
 
@@ -603,6 +739,7 @@
         <!-- =========================
              PROJETO 2
         ========================== -->
+
         <article class="project-card">
 
           <div class="project-image">
@@ -610,18 +747,14 @@
             <img
               src="images/gestao-de-tarefas.png"
               alt="Plataforma de gestão de tarefas"
+              data-pt-alt="Plataforma de gestão de tarefas"
+              data-en-alt="Task management platform"
               loading="lazy"
+              decoding="async"
             />
 
-            <span
-              class="featured-badge"
-              data-pt="Projeto destaque"
-              data-en="Featured project"
-            >
-              Projeto destaque
-            </span>
-
           </div>
+
 
           <div class="project-content">
 
@@ -633,6 +766,7 @@
               FULL STACK
             </span>
 
+
             <h3
               data-pt="Gestão de Tarefas"
               data-en="Task Management"
@@ -640,9 +774,11 @@
               Gestão de Tarefas
             </h3>
 
+
             <p class="project-tech">
               React • MUI • FastAPI • PostgreSQL
             </p>
+
 
             <div class="project-badges">
 
@@ -653,10 +789,7 @@
                 Dashboard
               </span>
 
-              <span
-                data-pt="JWT"
-                data-en="JWT"
-              >
+              <span>
                 JWT
               </span>
 
@@ -676,6 +809,7 @@
 
             </div>
 
+
             <p
               class="project-description"
               data-pt="Plataforma Full Stack para organização de tarefas, com agenda unificada, prioridades, etiquetas, filtros e autenticação baseada em JWT."
@@ -686,10 +820,14 @@
               baseada em JWT.
             </p>
 
+
             <div class="project-impact">
 
               <div>
-                <strong>✓</strong>
+
+                <strong aria-hidden="true">
+                  ✓
+                </strong>
 
                 <span
                   data-pt="Organização centralizada de tarefas"
@@ -697,10 +835,15 @@
                 >
                   Organização centralizada de tarefas
                 </span>
+
               </div>
 
+
               <div>
-                <strong>✓</strong>
+
+                <strong aria-hidden="true">
+                  ✓
+                </strong>
 
                 <span
                   data-pt="Backend separado da interface"
@@ -708,9 +851,11 @@
                 >
                   Backend separado da interface
                 </span>
+
               </div>
 
             </div>
+
 
             <div class="project-links">
 
@@ -730,9 +875,11 @@
 
         </article>
 
+
         <!-- =========================
              PROJETO 3
         ========================== -->
+
         <article class="project-card">
 
           <div class="project-image">
@@ -740,10 +887,14 @@
             <img
               src="images/controle_estoque.jpeg"
               alt="Aplicativo de controle de estoque"
+              data-pt-alt="Aplicativo de controle de estoque"
+              data-en-alt="Inventory control application"
               loading="lazy"
+              decoding="async"
             />
 
           </div>
+
 
           <div class="project-content">
 
@@ -755,6 +906,7 @@
               APLICAÇÃO MOBILE
             </span>
 
+
             <h3
               data-pt="Aplicativo de Controle de Estoque"
               data-en="Inventory Control App"
@@ -762,9 +914,11 @@
               Aplicativo de Controle de Estoque
             </h3>
 
+
             <p class="project-tech">
               Flutter • Dart • Firebase • Firestore
             </p>
+
 
             <div class="project-badges">
 
@@ -782,10 +936,7 @@
                 Permissões
               </span>
 
-              <span
-                data-pt="CRUD"
-                data-en="CRUD"
-              >
+              <span>
                 CRUD
               </span>
 
@@ -798,6 +949,7 @@
 
             </div>
 
+
             <p
               class="project-description"
               data-pt="Aplicativo para controle de equipamentos e materiais, com autenticação, permissões de acesso e sincronização dos dados em tempo real através do Firebase."
@@ -808,10 +960,14 @@
               em tempo real através do Firebase.
             </p>
 
+
             <div class="project-impact">
 
               <div>
-                <strong>✓</strong>
+
+                <strong aria-hidden="true">
+                  ✓
+                </strong>
 
                 <span
                   data-pt="Dados centralizados na nuvem"
@@ -819,10 +975,15 @@
                 >
                   Dados centralizados na nuvem
                 </span>
+
               </div>
 
+
               <div>
-                <strong>✓</strong>
+
+                <strong aria-hidden="true">
+                  ✓
+                </strong>
 
                 <span
                   data-pt="Controle de acesso por permissões"
@@ -830,9 +991,11 @@
                 >
                   Controle de acesso por permissões
                 </span>
+
               </div>
 
             </div>
+
 
             <div class="project-links">
 
@@ -852,9 +1015,11 @@
 
         </article>
 
+
         <!-- =========================
              PROJETO 4
         ========================== -->
+
         <article class="project-card">
 
           <div class="project-image">
@@ -862,10 +1027,14 @@
             <img
               src="images/RSI-API-image.jpg"
               alt="API de análise RSI"
+              data-pt-alt="API de análise RSI"
+              data-en-alt="RSI analysis API"
               loading="lazy"
+              decoding="async"
             />
 
           </div>
+
 
           <div class="project-content">
 
@@ -877,6 +1046,7 @@
               BACKEND / API
             </span>
 
+
             <h3
               data-pt="API de Análise RSI"
               data-en="RSI Analysis API"
@@ -884,9 +1054,11 @@
               API de Análise RSI
             </h3>
 
+
             <p class="project-tech">
               Python • Flask • PostgreSQL
             </p>
+
 
             <div class="project-badges">
 
@@ -920,6 +1092,7 @@
 
             </div>
 
+
             <p
               class="project-description"
               data-pt="API REST desenvolvida em Python para cálculo e disponibilização de dados do Índice de Força Relativa (RSI), utilizando Flask e PostgreSQL."
@@ -929,10 +1102,14 @@
               de dados do Índice de Força Relativa (RSI), utilizando Flask e PostgreSQL.
             </p>
 
+
             <div class="project-impact">
 
               <div>
-                <strong>✓</strong>
+
+                <strong aria-hidden="true">
+                  ✓
+                </strong>
 
                 <span
                   data-pt="Centralização dos cálculos"
@@ -940,10 +1117,15 @@
                 >
                   Centralização dos cálculos
                 </span>
+
               </div>
 
+
               <div>
-                <strong>✓</strong>
+
+                <strong aria-hidden="true">
+                  ✓
+                </strong>
 
                 <span
                   data-pt="Base para integrações e automações"
@@ -951,9 +1133,11 @@
                 >
                   Base para integrações e automações
                 </span>
+
               </div>
 
             </div>
+
 
             <div class="project-links">
 
@@ -973,9 +1157,11 @@
 
         </article>
 
+
         <!-- =========================
              PROJETO 5
         ========================== -->
+
         <article class="project-card hidden-project">
 
           <div class="project-image">
@@ -983,10 +1169,14 @@
             <img
               src="images/projeto-buscador-de-RSI.jpg"
               alt="Buscador de RSI"
+              data-pt-alt="Buscador de RSI"
+              data-en-alt="RSI Finder"
               loading="lazy"
+              decoding="async"
             />
 
           </div>
+
 
           <div class="project-content">
 
@@ -998,6 +1188,7 @@
               BACKEND
             </span>
 
+
             <h3
               data-pt="Buscador de RSI"
               data-en="RSI Finder"
@@ -1005,9 +1196,11 @@
               Buscador de RSI
             </h3>
 
+
             <p class="project-tech">
               Python • Flask • PostgreSQL
             </p>
+
 
             <div class="project-badges">
 
@@ -1041,6 +1234,7 @@
 
             </div>
 
+
             <p
               class="project-description"
               data-pt="Backend modular para consulta e análise de RSI utilizando dados externos e persistência em banco relacional."
@@ -1049,6 +1243,7 @@
               Backend modular para consulta e análise de RSI utilizando dados
               externos e persistência em banco relacional.
             </p>
+
 
             <div class="project-links">
 
@@ -1072,6 +1267,7 @@
         <!-- =========================
              PROJETO 6
         ========================== -->
+
         <article class="project-card hidden-project">
 
           <div class="project-image">
@@ -1079,10 +1275,14 @@
             <img
               src="images/projeto-buscador-de-QrCode.jpg"
               alt="Gerador de QR Code"
+              data-pt-alt="Gerador de QR Code"
+              data-en-alt="QR Code Generator"
               loading="lazy"
+              decoding="async"
             />
 
           </div>
+
 
           <div class="project-content">
 
@@ -1094,6 +1294,7 @@
               API
             </span>
 
+
             <h3
               data-pt="Gerador de QR Code"
               data-en="QR Code Generator"
@@ -1101,9 +1302,11 @@
               Gerador de QR Code
             </h3>
 
+
             <p class="project-tech">
               Python • Flask
             </p>
+
 
             <div class="project-badges">
 
@@ -1130,6 +1333,7 @@
 
             </div>
 
+
             <p
               class="project-description"
               data-pt="API desenvolvida em Flask para geração dinâmica de QR Codes e integração com outras aplicações."
@@ -1138,6 +1342,7 @@
               API desenvolvida em Flask para geração dinâmica de QR Codes e
               integração com outras aplicações.
             </p>
+
 
             <div class="project-links">
 
@@ -1159,10 +1364,14 @@
 
       </div>
 
+
+      <!-- Mostrar mais -->
+
       <div class="center">
 
         <button
           id="toggle-projects"
+          type="button"
           aria-expanded="false"
           aria-controls="projects-grid"
           data-pt-collapsed="Mostrar mais projetos"
@@ -1181,6 +1390,7 @@
     <!-- =========================
          TECNOLOGIAS
     ========================== -->
+
     <section
       id="skills"
       class="container section"
@@ -1196,12 +1406,14 @@
           STACK
         </span>
 
+
         <h2
           data-pt="Tecnologias"
           data-en="Technologies"
         >
           Tecnologias
         </h2>
+
 
         <p
           data-pt="Tecnologias que utilizo no desenvolvimento de aplicações mobile, APIs e soluções web."
@@ -1212,6 +1424,7 @@
         </p>
 
       </div>
+
 
       <div class="tech-icons">
 
@@ -1283,6 +1496,7 @@
     <!-- =========================
          CONTATO
     ========================== -->
+
     <section
       id="contact"
       class="container section contact-section"
@@ -1298,12 +1512,14 @@
           CONTATO
         </span>
 
+
         <h2
           data-pt="Vamos conversar?"
           data-en="Let's talk?"
         >
           Vamos conversar?
         </h2>
+
 
         <p
           data-pt="Estou aberto a oportunidades nas áreas de desenvolvimento Full Stack, Backend com Python e Desenvolvimento Mobile com Flutter."
@@ -1315,36 +1531,44 @@
 
       </div>
 
+
       <div class="contact-items">
 
         <a
           href="mailto:kennedyrafaelsilvaramos@gmail.com"
           data-pt="Email"
           data-en="Email"
+          aria-label="Enviar email para Kennedy Ramos"
         >
           Email
         </a>
+
 
         <a
           href="https://github.com/KennnedyRamos"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub de Kennedy Ramos"
         >
           GitHub
         </a>
+
 
         <a
           href="https://www.linkedin.com/in/kennedy-silva-ramos-566b00150/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn de Kennedy Ramos"
         >
           LinkedIn
         </a>
+
 
         <a
           href="https://wa.me/5513997781009"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="WhatsApp de Kennedy Ramos"
         >
           WhatsApp
         </a>
@@ -1359,10 +1583,12 @@
   <!-- =========================
        FOOTER
   ========================== -->
+
   <footer>
 
     <p>
       &copy; 2026 Kennedy Ramos.
+
       <span
         data-pt="Todos os direitos reservados."
         data-en="All rights reserved."
@@ -1377,9 +1603,18 @@
   <!-- =========================
        JAVASCRIPT
   ========================== -->
+
   <script>
 
-    const btn = document.getElementById("toggle-projects");
+    /*
+     * ==========================================
+     * ELEMENTOS
+     * ==========================================
+     */
+
+    const btn = document.getElementById(
+      "toggle-projects"
+    );
 
     const hiddenProjects = document.querySelectorAll(
       ".hidden-project"
@@ -1401,7 +1636,7 @@
       'meta[name="description"]'
     );
 
-    const titleEl = document.querySelector(
+    const titleElement = document.querySelector(
       "title"
     );
 
@@ -1426,13 +1661,22 @@
     );
 
 
+    /*
+     * ==========================================
+     * IDIOMA ATUAL
+     * ==========================================
+     */
+
     let currentLang = "pt";
 
 
     /*
-     * Atualiza o texto do botão de projetos
+     * ==========================================
+     * BOTÃO DE PROJETOS
+     * ==========================================
      */
-    const updateToggleProjectsText = () => {
+
+    function updateToggleProjectsText() {
 
       if (!btn) {
         return;
@@ -1441,35 +1685,57 @@
       const expanded =
         btn.getAttribute("aria-expanded") === "true";
 
-      const key =
-        expanded
-          ? `${currentLang}Expanded`
-          : `${currentLang}Collapsed`;
+      const languagePrefix =
+        currentLang === "en"
+          ? "en"
+          : "pt";
 
-      const label = btn.dataset[key];
+      const state =
+        expanded
+          ? "Expanded"
+          : "Collapsed";
+
+      const label =
+        btn.dataset[
+          `${languagePrefix}${state}`
+        ];
 
       if (label) {
         btn.textContent = label;
       }
 
-    };
+    }
 
 
     /*
-     * Atualiza idioma
+     * ==========================================
+     * ATUALIZAÇÃO DO IDIOMA
+     * ==========================================
      */
-    const setLanguage = (lang) => {
 
-      if (lang !== "pt" && lang !== "en") {
+    function setLanguage(lang) {
+
+      /*
+       * Segurança
+       */
+
+      if (
+        lang !== "pt" &&
+        lang !== "en"
+      ) {
         lang = "pt";
       }
+
 
       currentLang = lang;
 
 
       /*
-       * Textos
+       * ========================================
+       * TEXTOS
+       * ========================================
        */
+
       translatable.forEach((element) => {
 
         const value =
@@ -1479,35 +1745,23 @@
           return;
         }
 
-        /*
-         * Elementos que podem conter pequenos
-         * trechos de HTML continuam usando innerHTML.
-         * Para textos comuns usamos textContent.
-         */
-        if (
-          element.tagName === "SPAN" ||
-          element.tagName === "H1" ||
-          element.tagName === "H2" ||
-          element.tagName === "H3" ||
-          element.tagName === "P" ||
-          element.tagName === "A" ||
-          element.tagName === "BUTTON"
-        ) {
-
-          element.textContent = value;
-
-        }
+        element.textContent = value;
 
       });
 
 
       /*
-       * Alt das imagens
+       * ========================================
+       * ALT DAS IMAGENS
+       * ========================================
        */
+
       translatableAlt.forEach((element) => {
 
         const altValue =
-          element.dataset[`${lang}Alt`];
+          element.dataset[
+            `${lang}Alt`
+          ];
 
         if (altValue) {
 
@@ -1522,22 +1776,28 @@
 
 
       /*
-       * Title
+       * ========================================
+       * TITLE
+       * ========================================
        */
+
       if (
-        titleEl &&
-        titleEl.dataset[lang]
+        titleElement &&
+        titleElement.dataset[lang]
       ) {
 
-        titleEl.textContent =
-          titleEl.dataset[lang];
+        titleElement.textContent =
+          titleElement.dataset[lang];
 
       }
 
 
       /*
-       * Meta description
+       * ========================================
+       * META DESCRIPTION
+       * ========================================
        */
+
       if (
         metaDescription &&
         metaDescription.dataset[lang]
@@ -1552,8 +1812,11 @@
 
 
       /*
-       * Open Graph
+       * ========================================
+       * OPEN GRAPH
+       * ========================================
        */
+
       if (
         ogTitle &&
         ogTitle.dataset[lang]
@@ -1565,6 +1828,7 @@
         );
 
       }
+
 
       if (
         ogDescription &&
@@ -1580,8 +1844,11 @@
 
 
       /*
-       * Twitter / X
+       * ========================================
+       * TWITTER / X
+       * ========================================
        */
+
       if (
         twitterTitle &&
         twitterTitle.dataset[lang]
@@ -1593,6 +1860,7 @@
         );
 
       }
+
 
       if (
         twitterDescription &&
@@ -1608,14 +1876,27 @@
 
 
       /*
-       * Currículo
+       * ========================================
+       * CURRÍCULO
+       * ========================================
        */
+
       if (resumeLink) {
 
         const resumeHref =
           resumeLink.dataset[
             `${lang}Href`
           ];
+
+        const resumeDownload =
+          resumeLink.dataset[
+            `${lang}Download`
+          ];
+
+
+        /*
+         * Atualiza endereço
+         */
 
         if (resumeHref) {
 
@@ -1627,10 +1908,9 @@
         }
 
 
-        const resumeDownload =
-          resumeLink.dataset[
-            `${lang}Download`
-          ];
+        /*
+         * Atualiza nome do arquivo
+         */
 
         if (resumeDownload) {
 
@@ -1645,8 +1925,11 @@
 
 
       /*
-       * Idioma do documento
+       * ========================================
+       * IDIOMA DO DOCUMENTO
+       * ========================================
        */
+
       document.documentElement.lang =
         lang === "pt"
           ? "pt-BR"
@@ -1654,8 +1937,11 @@
 
 
       /*
-       * Botões de idioma
+       * ========================================
+       * BOTÕES DE IDIOMA
+       * ========================================
        */
+
       langButtons.forEach((button) => {
 
         const isActive =
@@ -1674,23 +1960,49 @@
       });
 
 
+      /*
+       * Atualiza botão dos projetos
+       */
+
       updateToggleProjectsText();
 
 
       /*
-       * Salva preferência
+       * ========================================
+       * SALVA PREFERÊNCIA
+       * ========================================
        */
-      localStorage.setItem(
-        "lang",
-        lang
-      );
 
-    };
+      try {
+
+        localStorage.setItem(
+          "lang",
+          lang
+        );
+
+      } catch (error) {
+
+        /*
+         * Caso o navegador bloqueie
+         * localStorage, o site continua funcionando.
+         */
+
+        console.warn(
+          "Não foi possível salvar o idioma.",
+          error
+        );
+
+      }
+
+    }
 
 
     /*
-     * Mostrar / esconder projetos
+     * ==========================================
+     * MOSTRAR / ESCONDER PROJETOS
+     * ==========================================
      */
+
     if (btn) {
 
       btn.addEventListener(
@@ -1703,12 +2015,16 @@
             ) === "true";
 
 
+          const shouldExpand =
+            !expanded;
+
+
           hiddenProjects.forEach(
             (card) => {
 
               card.classList.toggle(
                 "is-visible",
-                !expanded
+                shouldExpand
               );
 
             }
@@ -1717,7 +2033,7 @@
 
           btn.setAttribute(
             "aria-expanded",
-            String(!expanded)
+            String(shouldExpand)
           );
 
 
@@ -1725,10 +2041,14 @@
 
 
           /*
-           * Após expandir, leva o foco
-           * para o primeiro projeto adicional.
+           * Ao expandir, posiciona o usuário
+           * no primeiro projeto adicional.
            */
-          if (!expanded && hiddenProjects.length) {
+
+          if (
+            shouldExpand &&
+            hiddenProjects.length
+          ) {
 
             hiddenProjects[0].scrollIntoView({
               behavior: "smooth",
@@ -1744,8 +2064,11 @@
 
 
     /*
-     * Troca de idioma
+     * ==========================================
+     * TROCA DE IDIOMA
+     * ==========================================
      */
+
     langButtons.forEach(
       (button) => {
 
@@ -1753,8 +2076,11 @@
           "click",
           () => {
 
+            const selectedLanguage =
+              button.dataset.lang;
+
             setLanguage(
-              button.dataset.lang
+              selectedLanguage
             );
 
           }
@@ -1765,29 +2091,53 @@
 
 
     /*
-     * Idioma inicial
+     * ==========================================
+     * IDIOMA INICIAL
+     * ==========================================
      */
-    const storedLang =
-      localStorage.getItem("lang");
+
+    let storedLang = null;
+
+    try {
+
+      storedLang =
+        localStorage.getItem(
+          "lang"
+        );
+
+    } catch (error) {
+
+      storedLang = null;
+
+    }
+
 
     const browserLang =
       (
-        navigator.language || ""
+        navigator.language ||
+        ""
       ).toLowerCase();
 
 
     const initialLang =
-      storedLang ||
-      (
-        browserLang.startsWith("pt")
+      storedLang === "pt" ||
+      storedLang === "en"
+        ? storedLang
+        : browserLang.startsWith("pt")
           ? "pt"
-          : "en"
-      );
+          : "en";
 
 
-    setLanguage(initialLang);
+    /*
+     * Inicializa o site
+     */
+
+    setLanguage(
+      initialLang
+    );
 
   </script>
 
 </body>
 </html>
+```
